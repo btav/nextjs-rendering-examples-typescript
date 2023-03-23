@@ -7,7 +7,7 @@ function ISR({ posts }: Posts) {
   return (
     <main className="flex flex-col items-center h-screen">
       <h1 className="text-4xl font-bold pt-8">
-        ⚡️ Incremental server-side rendering
+        ⚡️ Incremental static regeneration
       </h1>
       <div className="my-4">
         {posts.map((post, index) => (
