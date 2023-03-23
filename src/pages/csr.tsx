@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { LoadingIndicator } from "@/components/LoadingIndicator";
 import { Post } from "@/components/Post";
 
-interface IPost {
+interface Posts {
   title: string;
   content: string;
   imageUrl: string;
 }
 
 function CSR() {
-  const [posts, setPosts] = useState<IPost[]>([]);
+  const [posts, setPosts] = useState<Posts[]>([]);
 
   const getPosts = async () => {
     try {
